@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid Clone</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <script>
+        // Generar un timestamp
+        var timestamp = new Date().getTime();
+        // Crear una etiqueta de script con el timestamp
+        var script = document.createElement('script');
+        script.src = 'main.js?v=' + timestamp;
+        script.defer = true;
+        document.head.appendChild(script);
+    </script>
+</head>
+<body>
+    <h1>Arkanoid Clone</h1>
+    <div id="game-container"></div>
+    <button id="start-button">Start Game</button>
+</body>
+</html>
